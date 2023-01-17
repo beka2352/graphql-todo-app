@@ -1,0 +1,17 @@
+fragment ToDoItem on Todo {
+    id
+    title
+    completed
+}
+
+mutation ChangeStatus($id: ID!, $input: UpdateTodoInput!) {
+  updateTodo(id: $id, input: $input) {
+    id
+    title
+    completed
+  }
+}
+
+mutation DeleteToDo($id: ID!) {
+  deleteTodo(id: $id) 
+}
