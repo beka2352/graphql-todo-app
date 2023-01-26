@@ -43,6 +43,7 @@ export function AddToDo({ onCreate }: AddToDoProps) {
 
   return (
     <form onSubmit={submitHandler}>
+      <div></div>
       <input
         type="text"
         className="border py-2 px-4 mb-2 w-full outline-0"
